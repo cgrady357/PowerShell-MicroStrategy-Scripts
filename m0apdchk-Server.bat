@@ -1,0 +1,12 @@
+powershell  E:\Prod_E\0AP\Scripts\Check-AvailabilityMsiWeb.ps1 ^
+-UrlToCheck "http://msi-reporting.corp.sprint.com/MSIReporting/servlet/mstrWeb" ^
+-UserID  "USER_ID" ^
+-Password "PASSWORD" ^
+-WebAppServer "WEB SERVER NAME" ^
+-IntelligenceServer "I-SERVER NAME" ^
+-ProjectToVerifyIsAvailable 'Enterprise Manager' ^
+-SmtpServer 'SMPT SERVER NAME' ^
+-ControlMJobName "m0apdchk05" ^
+-ScriptLogPath "E:\Prod_E\0AP\Logs\MicroStrategy\" ^
+-To 'TO-EMAIL-ADDRESS' ^
+-From "FROM-EMAIL-ADDRESS" 

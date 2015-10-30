@@ -1,0 +1,1 @@
+powershell  C:\ProgramData\WindowsPowerShell\Execute-LicenseManager.ps1 -ProjectSourceName "PROJECT SOURCE NAME" -UserName "USER NAME" -Password "PASSWORD" -ReportFile C:\licenses\AuditingReport.htm
