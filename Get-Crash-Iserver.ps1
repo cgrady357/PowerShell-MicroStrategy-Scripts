@@ -1,0 +1,1 @@
+Get-WinEvent -FilterHashTable @{ProviderName="Service Control Manager"; ID=7034; Data="MicroStrategy Intelligence Server";StartTime=(get-date).AddDays(-30)} | fl MachineName, Id, TimeCreated, LogName, Level, LevelDisplayName, Message >> events.txt

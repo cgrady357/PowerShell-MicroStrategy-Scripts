@@ -1,0 +1,2 @@
+$computername = hostname
+Get-ChildItem HKLM:\SOFTWARE\Wow6432Node\ODBC\ODBC.INI | ?{$_.GetValue("DBCName") -eq "e-" -and $_.GetValue("Driver") -match "Teradata"} | %{$computername + " - " +  $_.PSChildName}
